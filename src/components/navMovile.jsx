@@ -11,7 +11,7 @@ import {
     Image
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import profile from '../assets/profilePhoto.jpg'
+import profile from '../assets/profilePhoto.webp'
 
 function NavMovile() {
     const { isOpen, onOpen, onClose } = useDisclosure()

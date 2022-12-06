@@ -1,7 +1,10 @@
-import { Box, Button, Grid, GridItem, Heading, IconButton, Image, Stack } from '@chakra-ui/react'
+import { Box, Button, Divider, Grid, GridItem, Heading, Image, Stack } from '@chakra-ui/react'
 import NavMovile from './navMovile'
-import profile from '../assets/profilePhoto.jpg'
-import { ArrowForwardIcon, EmailIcon, HamburgerIcon } from '@chakra-ui/icons'
+import profile from '../assets/profilePhoto.webp'
+import Bg from '../assets/Fondo.webp'
+import { AiOutlineHome, AiOutlineUser, AiOutlinePicRight, AiOutlineMail } from "react-icons/ai";
+import { BsBriefcase } from "react-icons/bs";
+
 
 function Home() {
 
@@ -15,25 +18,40 @@ function Home() {
       <Grid
         h='100vh'
         templateRows='repeat(6, 1fr)'
-        templateColumns='repeat(5, 1fr)'
+        templateColumns='repeat(6, 1fr)'
       >
-        <GridItem rowSpan={3} colSpan={1} bg='brand.primary' minW='200px' display={{ base: 'none', md: 'block' }} p={'2px'}>
-          <Image objectFit='cover' src={profile} alt={'gabriel ferrer'} boxSize='100%' />
+        <GridItem rowSpan={2} colSpan={1} bg='brand.primary' display={{ base: 'none', md: 'block' }} p={'2px'}>
+          <Image objectFit='contain' src={profile} alt={'gabriel ferrer'}/>
         </GridItem>
 
-        <GridItem colSpan={{ base: 6, md: 4 }} rowSpan={6} bg='primary'>
-          main
+        <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} bg='primary'>
+          <Image objectFit='cover' src={Bg} alt={'fondo Home'}/>
         </GridItem>
 
-        <GridItem bg='brand.primary' rowSpan={4} display={{ base: 'none', md: 'block' }} >
+        <GridItem bg='brand.primary' rowSpan={5} display={{ base: 'none', md: 'block' }} >
           <Stack direction='column'>
-            <Heading size={'md'}>Gabriel Ferrer</Heading>
-            <Button leftIcon={<EmailIcon />} colorScheme='teal' variant='solid'>
+            {/* <Heading size={'sm'} marginBottom={'5px'} color={'white'}>Gabriel Ferrer</Heading> */}
+            <Divider/>
+            <Button leftIcon={<AiOutlineHome size={'20px'}/>} colorScheme='teal' variant='ghost' borderRadius={0}>
               Home
             </Button>
-            <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+            <Divider/>
+            <Button leftIcon={<AiOutlineUser size={'20px'}/>} colorScheme='teal' variant='ghost' borderRadius={0}>
               Sobre Mi
             </Button>
+            <Divider/>
+            <Button leftIcon={<AiOutlinePicRight size={'20px'}/>} colorScheme='teal' variant='ghost' borderRadius={0}>
+              Resumen
+            </Button>
+            <Divider/>
+            <Button leftIcon={<BsBriefcase size={'20px'}/>} colorScheme='teal' variant='ghost' borderRadius={0}>
+              Portafolio
+            </Button>
+            <Divider/>
+            <Button leftIcon={<AiOutlineMail size={'20px'}/>} colorScheme='teal' variant='ghost' borderRadius={0}>
+              Contacto
+            </Button>
+            <Divider/>
           </Stack>
         </GridItem>
       </Grid>
