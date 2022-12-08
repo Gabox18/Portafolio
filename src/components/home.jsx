@@ -4,6 +4,8 @@ import profile from '../assets/profilePhoto.webp'
 import Bg from '../assets/fondo-home.webp'
 import { AiOutlineHome, AiOutlineUser, AiOutlinePicRight, AiOutlineMail } from "react-icons/ai";
 import { BsBriefcase } from "react-icons/bs";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { ImMail } from "react-icons/im";
 
 
 function Home() {
@@ -25,34 +27,41 @@ function Home() {
         </GridItem>
 
         <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} backgroundColor={'rgb(0 0 0 / 80%)'}>
-          <Image objectFit='cover' src={Bg} alt={'fondo Home'} h={'100vh'} w={'100%'}/> 
+          <Image objectFit='cover' src={Bg} alt={'fondo Home'} h={'100vh'} w={'100%'} />
         </GridItem>
 
-        <GridItem bg='brand.primary' rowSpan={5} display={{ base: 'none', md: 'block' }} >
+        <GridItem bg='brand.primary' rowSpan={4} display={{ base: 'none', md: 'block' }} >
           <Stack direction='column'>
             {/* <Heading size={'sm'} marginBottom={'5px'} color={'white'}>Gabriel Ferrer</Heading> */}
             <Divider />
-            <Button leftIcon={<AiOutlineHome size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0}>
+            <Button leftIcon={<AiOutlineHome size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'}>
               Home
             </Button>
             <Divider />
-            <Button leftIcon={<AiOutlineUser size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0}>
+            <Button leftIcon={<AiOutlineUser size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'}>
               Sobre Mi
             </Button>
             <Divider />
-            <Button leftIcon={<AiOutlinePicRight size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0}>
+            <Button leftIcon={<AiOutlinePicRight size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'}>
               Resumen
             </Button>
             <Divider />
-            <Button leftIcon={<BsBriefcase size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0}>
+            <Button leftIcon={<BsBriefcase size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'}>
               Portafolio
             </Button>
             <Divider />
-            <Button leftIcon={<AiOutlineMail size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0}>
+            <Button leftIcon={<AiOutlineMail size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'}>
               Contacto
             </Button>
             <Divider />
           </Stack>
+            <Stack direction='row' justify={'center'} marginTop={'6rem'}>
+              <FaLinkedin size={'1.5rem'} color='teal' />
+              <FaGithubSquare size={'1.5rem'} color='teal' />
+              <ImMail size={'1.5rem'} color='teal' />
+            </Stack>
+            {`2022 © Gabriel Ferrer.\n
+              All Right Reserved.`} 
         </GridItem>
       </Grid>
     </Box>

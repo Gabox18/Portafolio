@@ -29,8 +29,6 @@ function NavMovile() {
                 </IconButton>
             </Flex>
 
-
-
             <Drawer
                 isOpen={isOpen}
                 placement='left'
@@ -40,7 +38,7 @@ function NavMovile() {
             >
                 <DrawerOverlay />
                 <DrawerContent>
-                    <Image src={profile} alt={'gabriel ferrer'} />
+                    <Image src={profile} alt={'gabriel ferrer'} width={'12rem'} margin={'0 auto'}/>
                 </DrawerContent>
             </Drawer>
         </>
