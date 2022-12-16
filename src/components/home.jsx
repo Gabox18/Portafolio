@@ -1,11 +1,12 @@
-import { Box, Button, Divider, Flex, Grid, GridItem, Image, Stack, Link, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Grid, GridItem, Image, Stack, Link, Text} from '@chakra-ui/react'
 import NavMovile from './navMovile'
 import profile from '../assets/profilePhoto.webp'
-import Bg from '../assets/fondo-home.webp'
+import Bg from '../assets/fondo-home1.webp'
 import { AiOutlineHome, AiOutlineUser, AiOutlinePicRight, AiOutlineMail } from "react-icons/ai";
 import { BsBriefcase } from "react-icons/bs";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
+import LetterHome from './letterHome/LetterHome';
 
 
 function Home() {
@@ -27,8 +28,10 @@ function Home() {
         </GridItem>
 
         <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} >
-          <Box h={'100vh'} bgImage={`url(${Bg})`} bgRepeat={'no-repeat'} bgSize={'cover'} filter={'blur(1.2px)'}>
-            <Flex bg={'rgb(0 0 0 / 10%)'} h={'100vh'} />
+          <Box h={'100vh'} bgImage={`url(${Bg})`} bgRepeat={'no-repeat'} bgSize={'cover'}>
+            <Flex bg={'rgb(0 0 0 / 10%)'} h={'100vh'} justifyContent={'center'}>
+            <LetterHome/>
+            </Flex>
             {/* <Image objectFit='cover' src={Bg} alt={'fondo Home'} h={'100vh'} w={'100%'} /> */}
           </Box>
         </GridItem>
