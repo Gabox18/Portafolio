@@ -20,11 +20,11 @@ function NavMovile() {
     return (
         <>
             <Flex minWidth='max-content' alignItems='center'>
-                <Box p='2' bg={'brand.primary'} width={'100%'}>
+                <Box p='2' bg={'brand.primary'} width={'90%'}>
                     <Heading size='md' color={'brand.700'}>Gabriel Ferrer</Heading>
                 </Box>
                 <IconButton ref={btnRef} bg={'brand.primary'} color={'brand.700'} onClick={onOpen} borderRadius={'0'}
-                    icon={<HamburgerIcon />}>
+                    icon={<HamburgerIcon padding={'0'} />}>
                     Open
                 </IconButton>
             </Flex>

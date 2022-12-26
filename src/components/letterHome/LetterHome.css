@@ -3,28 +3,32 @@
  .saludo {
   text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
   color: #e5e5e5;
-  font-size: 2.26rem;
+  font-size: 1.7rem;
   position: relative;
   top: 16rem;
 }
 .container {
   color: #e5e5e5;
-  font-size: 2.26rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .animation {
   height:50px;
   overflow:hidden;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
+  padding: 0;
+  margin: 0;
 }
 
 .animation > div > div {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem ;
   height:3.5rem;
   margin-bottom: 2.3rem;
   display:inline-block;

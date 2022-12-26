@@ -4,7 +4,7 @@ import './LetterHome.css'
 
 function LetterHome() {
     return (
-        <Box>
+        <div>
             <p class="saludo">Hola Yo soy</p>
             <div class="container">
                     <section class="animation">
@@ -13,7 +13,7 @@ function LetterHome() {
                         <div class="third"><div>T.S.U Informatica</div></div>
                     </section>
             </div>
-        </Box>
+        </div>
     )
 }
 

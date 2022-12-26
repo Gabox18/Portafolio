@@ -27,10 +27,10 @@ function Home() {
           <Image objectFit='cover' h={'100%'} w={'100%'} src={profile} alt={'gabriel ferrer'} />
         </GridItem>
 
-        <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} >
+        <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} boxSizing={'content-box'}>
           <Box h={'100vh'} bgImage={`url(${Bg})`} bgRepeat={'no-repeat'} bgSize={'cover'}>
             <Flex bg={'rgb(0 0 0 / 10%)'} h={'100vh'} justifyContent={'center'}>
-            <LetterHome/>
+              <LetterHome/>
             </Flex>
             {/* <Image objectFit='cover' src={Bg} alt={'fondo Home'} h={'100vh'} w={'100%'} /> */}
           </Box>
