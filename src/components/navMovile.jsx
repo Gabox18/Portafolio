@@ -22,7 +22,7 @@ import { BsBriefcase } from 'react-icons/bs'
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
 import { ImMail } from 'react-icons/im'
 
-function NavMovile() {
+function NavMovile({setSeccion}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
 
@@ -51,62 +51,73 @@ function NavMovile() {
                     <Image src={profile} alt={'gabriel ferrer'} width={'12rem'} margin={'2rem auto'} borderRadius={'full'}
                         marginTop={'1rem'}/>
                     <Divider marginTop={'1rem'} w={'80%'} margin={'0 auto'}/>
-                    <Button leftIcon={<AiOutlineHome size={'1.7rem'} />}
+                    <Button leftIcon={<AiOutlineHome size={'1.5rem'} />}
                         color='teal'
                         variant='ghost'
                         borderRadius={0}
                         h={'30px'}
                         p={'1.5rem'}
                         iconSpacing={'5px'}
-                        fontSize={'1.5rem'}>
+                        fontSize={'1.3rem'}
+                        onClick={()=> {
+                            setSeccion('home')
+                            onClose()
+                        }}>
                         Home
                     </Button>
 
                     <Divider w={'80%'} margin={'0 auto'}/>
-                    <Button leftIcon={<AiOutlineUser size={'1.7rem'} />}
+                    <Button leftIcon={<AiOutlineUser size={'1.5rem'} />}
                         color='teal'
                         variant='ghost'
                         borderRadius={0}
                         h={'30px'}
                         p={'1.5rem'}
                         iconSpacing={'5px'}
-                        fontSize={'1.5rem'}>
+                        fontSize={'1.3rem'}
+                        onClick={()=>{
+                            setSeccion('sobremi')
+                            onClose()
+                        }}>
                         Sobre Mi
                     </Button>
 
                     <Divider w={'80%'} margin={'0 auto'}/>
-                    <Button leftIcon={<AiOutlinePicRight size={'1.7rem'} />}
+                    <Button leftIcon={<AiOutlinePicRight size={'1.5rem'} />}
                         color='teal'
                         variant='ghost'
                         borderRadius={0}
                         h={'30px'}
                         p={'1.5rem'}
                         iconSpacing={'5px'}
-                        fontSize={'1.5rem'}>
+                        fontSize={'1.3rem'}
+                        onClick={onClose}>
                         Resumen
                     </Button>
 
                     <Divider w={'80%'} margin={'0 auto'}/>
-                    <Button leftIcon={<BsBriefcase size={'1.7rem'} />}
+                    <Button leftIcon={<BsBriefcase size={'1.5rem'} />}
                         color='teal'
                         variant='ghost'
                         borderRadius={0}
                         h={'30px'}
                         p={'1.5rem'}
                         iconSpacing={'5px'}
-                        fontSize={'1.5rem'}>
+                        fontSize={'1.3rem'}
+                        onClick={onClose}>
                         Portafolio
                     </Button>
 
                     <Divider w={'80%'} margin={'0 auto'}/>
-                    <Button leftIcon={<AiOutlineMail size={'1.7rem'} />}
+                    <Button leftIcon={<AiOutlineMail size={'1.5rem'} />}
                         color='teal'
                         variant='ghost'
                         borderRadius={0}
                         h={'30px'}
                         p={'1.5rem'}
                         iconSpacing={'5px'}
-                        fontSize={'1.5rem'}>
+                        fontSize={'1.3rem'}
+                        onClick={onClose}>
                         Contacto
                     </Button>
                     <Divider w={'80%'} margin={'0 auto'}/>

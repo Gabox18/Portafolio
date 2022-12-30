@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Flex, Grid, GridItem, Image, Stack, Link, Text} from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Grid, GridItem, Image, Stack, Link, Text } from '@chakra-ui/react'
 import NavMovile from './navMovile'
 import profile from '../assets/profilePhoto.webp'
 import Bg from '../assets/fondo-home1.webp'
@@ -7,15 +7,18 @@ import { BsBriefcase } from "react-icons/bs";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
 import LetterHome from './letterHome/LetterHome';
-
+import SobreMi from './SobreMi';
+import { useState } from 'react';
 
 function Home() {
 
+  let [seccion,setSeccion ] =useState('home')
+  console.log(seccion)
 
   return (
     <Box>
       <Box display={{ base: 'block', md: 'none' }}>
-        <NavMovile />
+        <NavMovile setSeccion={setSeccion}/>
       </Box>
 
       <Grid
@@ -30,7 +33,13 @@ function Home() {
         <GridItem colSpan={{ base: 6, md: 5 }} rowSpan={6} boxSizing={'content-box'}>
           <Box h={'100vh'} bgImage={`url(${Bg})`} bgRepeat={'no-repeat'} bgSize={'cover'}>
             <Flex bg={'rgb(0 0 0 / 10%)'} h={'100vh'} justifyContent={'center'}>
-              <LetterHome/>
+              {seccion==='home'
+              ? <LetterHome/>
+              :seccion==='sobremi'
+              ? <SobreMi/>
+              :<></>}
+              
+             
             </Flex>
             {/* <Image objectFit='cover' src={Bg} alt={'fondo Home'} h={'100vh'} w={'100%'} /> */}
           </Box>
@@ -40,27 +49,65 @@ function Home() {
           <Stack direction='column'>
             {/* <Heading size={'sm'} marginBottom={'5px'} color={'white'}>Gabriel Ferrer</Heading> */}
             <Divider />
-            <Button leftIcon={<AiOutlineHome size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'} iconSpacing={'5px'}>
+            <Button leftIcon={<AiOutlineHome size={'20px'} />} 
+              colorScheme='teal' 
+              variant='ghost' 
+              borderRadius={0} 
+              h={'30px'} 
+              iconSpacing={'5px'}
+              onClick={()=>{setSeccion('home')}}>
               Home        
             </Button>
+
             <Divider />
-            <Button leftIcon={<AiOutlineUser size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'} iconSpacing={'5px'}>
+
+            <Button leftIcon={<AiOutlineUser size={'20px'} />} 
+              colorScheme='teal' 
+              variant='ghost' 
+              borderRadius={0} 
+              h={'30px'} 
+              iconSpacing={'5px'}
+              onClick={()=>{setSeccion('sobremi')}}>
               Sobre Mi  
             </Button>
+
             <Divider />
-            <Button leftIcon={<AiOutlinePicRight size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'} iconSpacing={'5px'}>
+
+            <Button leftIcon={<AiOutlinePicRight size={'20px'} />} 
+              colorScheme='teal' 
+              variant='ghost' 
+              borderRadius={0} 
+              h={'30px'} 
+              iconSpacing={'5px'}>
               Resumen   
             </Button>
+
             <Divider />
-            <Button leftIcon={<BsBriefcase size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'} iconSpacing={'5px'}>
+
+            <Button leftIcon={<BsBriefcase size={'20px'} />} 
+              colorScheme='teal' 
+              variant='ghost' 
+              borderRadius={0} 
+              h={'30px'} 
+              iconSpacing={'5px'}>
               Portafolio
             </Button>
+
             <Divider />
-            <Button leftIcon={<AiOutlineMail size={'20px'} />} colorScheme='teal' variant='ghost' borderRadius={0} h={'30px'} iconSpacing={'5px'}>
+
+            <Button leftIcon={<AiOutlineMail size={'20px'} />} 
+            colorScheme='teal' 
+            variant='ghost' 
+            borderRadius={0} 
+            h={'30px'} 
+            iconSpacing={'5px'}>
               Contacto  
             </Button>
+
             <Divider />
+
           </Stack>
+
           <Stack direction='row' justify={'center'} marginTop={'6rem'}>
             <Link href='https://www.linkedin.com/in/gabriel-ferrer-villasmil/' isExternal>
               <FaLinkedin size={'1.5rem'} color='teal' />
