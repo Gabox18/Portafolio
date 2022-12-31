@@ -27,7 +27,7 @@ function NavMovile({setSeccion}) {
     const btnRef = React.useRef()
 
     return (
-        <>
+        <Box position={'fixed'} width='100%'>
             <Flex minWidth='max-content' alignItems='center' bg={'brand.primary'}>
                 <Box width={'90%'}>
                     <Heading size='md' color={'brand.700'} height={'100%'} marginLeft={'12%'}>Gabriel Ferrer</Heading>
@@ -139,7 +139,7 @@ function NavMovile({setSeccion}) {
                     </Text>
                 </DrawerContent>
             </Drawer>
-        </>
+        </Box>
     )
 }
 
