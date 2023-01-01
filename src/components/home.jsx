@@ -9,6 +9,7 @@ import { ImMail } from "react-icons/im";
 import LetterHome from './letterHome/LetterHome';
 import SobreMi from './SobreMi';
 import { useState } from 'react';
+import Resumen from './Resumen/Resumen';
 
 function Home() {
 
@@ -37,6 +38,8 @@ function Home() {
               ? <LetterHome/>
               :seccion==='sobremi'
               ? <SobreMi/>
+              :seccion==='resumen'
+              ?<Resumen/>
               :<></>}
               
              
@@ -78,7 +81,8 @@ function Home() {
               variant='ghost' 
               borderRadius={0} 
               h={'30px'} 
-              iconSpacing={'5px'}>
+              iconSpacing={'5px'}
+              onClick={()=>{setSeccion('resumen')}}>
               Resumen   
             </Button>
 
