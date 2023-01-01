@@ -12,7 +12,7 @@ function Resumen() {
                 </Flex>
                 <Divider variant={'dashed'} margin={'0.5rem auto 2rem auto'} />
                 <Flex flexDirection={{ base: 'column', md: 'row' }}>
-                    <Flex flexDirection={'column'} p='1rem' w={'50%'}>
+                    <Flex flexDirection={'column'} p='1rem' w={{base:'100%',md:'50%'}}>
                         <Box borderLeft={'teal solid 3px'} color='white' marginBottom={'3rem'}>
                             {/* <span className='left-bar'></span> */}
                             <Text color={'white'} textAlign='left' marginLeft='5px' textDecoration='underline teal 2px'>Oct 2022</Text>
@@ -65,7 +65,7 @@ function Resumen() {
 
 
 
-                    <Flex flexDirection={'column'} p='1rem' w={'50%'}>
+                    <Flex flexDirection={'column'} p='1rem' w={{base:'100%',md:'50%'}}>
                         <Box borderLeft={'teal solid 3px'} color='white' marginBottom={'3rem'}>
                             {/* <span className='left-bar'></span> */}
                             <Text color={'white'} textAlign='left' marginLeft='5px' textDecoration='underline teal 2px'>Oct 2022</Text>
