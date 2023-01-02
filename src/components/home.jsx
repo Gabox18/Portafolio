@@ -7,7 +7,7 @@ import { BsBriefcase } from "react-icons/bs";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
 import LetterHome from './letterHome/LetterHome';
-import SobreMi from './SobreMi';
+import SobreMi from './SobreMI/SobreMi';
 import { useState } from 'react';
 import Resumen from './Resumen/Resumen';
 

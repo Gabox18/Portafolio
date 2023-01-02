@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Divider, Flex, Heading, Icon, Link, List, ListItem, Text } from '@chakra-ui/react'
 import { AiOutlineCloudDownload, AiOutlineUser } from "react-icons/ai";
+import "./SobreMi.css"
 
 function SobreMi(props) {
     return (
@@ -13,7 +14,9 @@ function SobreMi(props) {
                 <Divider variant={'dashed'} margin={'0.5rem auto 2rem auto'} />
                 <Flex flexDirection={{ base: 'column', md: 'row' }}>
                     <Box w={{base:'100%' ,md:'65%'}}>
-                        <Heading as={'h3'} size={'md'} color={'white'}> Programador web full stack </Heading>
+                        <div className='SubtituloResumen'>
+                            <h3>Programador web full stack</h3>
+                        </div>
                         <Text align={'justify'} color={'white'} marginTop={'1rem'}>
                             📌Soy Desarrollador Web Full Stack con experiencias trabajando en equipo tanto en proyectos de desarrollo como en otra áreas como atención al cliente.
                             <br/><br/>
@@ -23,7 +26,9 @@ function SobreMi(props) {
                         </Text>
                     </Box>
                     <Box w={{base:'100%' ,md:'35%'}} p={'0 1.5rem'} marginTop={{base:'2rem', md:'0px'}}>
-                        <Heading as={'h3'} size={'md'} color={'white'}> Informacion Personal </Heading>
+                        <div className='SubtituloResumen'>
+                            <h3>Informacion Personal</h3>
+                        </div>
                         <List spacing={5} marginTop={'1rem'}>
                             <ListItem textAlign={'left'}>
                                 <Text fontSize={'2erm'} color='white' display={'inline'} textDecoration='underline teal 3px'>Nombre</Text>
