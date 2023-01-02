@@ -27,13 +27,13 @@ function NavMovile({setSeccion}) {
     const btnRef = React.useRef()
 
     return (
-        <Box position={'fixed'} width='100%'>
-            <Flex minWidth='max-content' alignItems='center' bg={'brand.primary'}>
+        <Box position={'fixed'} width='100%' zIndex={'1'}>
+            <Flex minWidth='max-content' alignItems='center' bg={'brand.primary'} h='3rem'>
                 <Box width={'90%'}>
-                    <Heading size='md' color={'brand.700'} height={'100%'} marginLeft={'12%'}>Gabriel Ferrer</Heading>
+                    <Heading size='lg' color={'white'} height={'100%'} marginLeft={'12%'} textTransform='uppercase'>Gabriel Ferrer</Heading>
                 </Box>
-                <IconButton ref={btnRef} bg={'brand.primary'} color={'brand.700'} onClick={onOpen} borderRadius={'0'}
-                    icon={<HamburgerIcon padding={'0'} />}>
+                <IconButton ref={btnRef} bg={'brand.primary'} color={'white'} onClick={onOpen} borderRadius={'0'}
+                    icon={<HamburgerIcon padding={'0'} w={'20px'} h={'20px'}/>}>
                     Open
                 </IconButton>
             </Flex>

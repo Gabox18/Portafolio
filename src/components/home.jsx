@@ -14,8 +14,7 @@ import Resumen from './Resumen/Resumen';
 function Home() {
 
   let [seccion,setSeccion ] =useState('home')
-  console.log(seccion)
-
+  
   return (
     <Box>
       <Box display={{ base: 'block', md: 'none' }}>

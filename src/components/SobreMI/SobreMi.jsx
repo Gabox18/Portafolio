@@ -7,7 +7,7 @@ function SobreMi(props) {
     return (
         <Box bg={'#080816'}  w={'100%'} overflowY={'scroll'}>
             <Box w={'90%'} margin={'0 auto'}>
-                <Flex justifyContent={'space-between'} alignItems={'center'} marginTop={'3rem'}>
+                <Flex justifyContent={'space-between'} alignItems={'center'} marginTop={'4rem'}>
                     <Heading as={'h2'} color={'teal'}>Sobre Mi </Heading>
                     <Icon as={AiOutlineUser} color={'teal'} boxSize={'2.5rem'}></Icon>
                 </Flex>
