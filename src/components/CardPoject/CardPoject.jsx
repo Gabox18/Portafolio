@@ -1,5 +1,5 @@
 import "./CardPoject.css"
-import { Button, Link } from "@chakra-ui/react";
+import { Button, Link, Text, VStack } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 function CardPoject({ title, description, bg, link }) {
@@ -15,12 +15,15 @@ function CardPoject({ title, description, bg, link }) {
             <strong> {title}
             </strong>
             <div className="card__body">
-                {description}
+                {/* {description} */}
             </div>
             <span>
-                <Link href={link} isExternal>
-                <Button variant='link' colorScheme='red' size={'lg'} fontSize={'lg'} fontWeight={'bold'}>Ver Proyecto<ExternalLinkIcon mx='2px'/></Button> 
-                </Link>  
+                <VStack>
+                    <Link href={link} isExternal display={'block'}>
+                        <Button variant='link' size={'lg'} fontSize={'x-large'} fontWeight={'bold'} color={'red'}>Ver Proyecto<ExternalLinkIcon mx='2px' /></Button>
+                    </Link>
+                    <Text color={"red"} fontSize='0.7em' p={' 0 5rem'}>{description}</Text>
+                </VStack>
             </span>
         </div>
     )

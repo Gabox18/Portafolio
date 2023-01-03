@@ -3,6 +3,7 @@ import { BsBriefcase } from "react-icons/bs";
 import CardPoject from "./CardPoject/CardPoject";
 import pojectPoke from '../assets/PokeApp.webp'
 import bbApp from '../assets/BlockbusterApp.webp'
+import Vgame from '../assets/VideoGameApp.webp'
 
 function Portafolio() {
     return (
@@ -16,6 +17,9 @@ function Portafolio() {
                 <Flex flexDirection={{base:'column', lg:'row'}}>
                     <CardPoject bg={pojectPoke} link='https://pokemon-gabox18.vercel.app/' title={'PokeApp'} description={'App de pokemon echa como Poryecto individual en bootcamp Henry'}/>
                     <CardPoject bg={bbApp} link='https://blockbuster-pf.vercel.app/' title={'BlockbusterApp'} description={'App de streaming de peliculas por suscripcion'}/>
+                </Flex>
+                <Flex flexDirection={{base:'column', lg:'row'}} w={{base:'100%',lg:'50%'}} margin={{base:'0',lg:'5rem auto 0 auto'}}>
+                    <CardPoject bg={Vgame} link='https://github.com/Gabox18/PI-VideoGames' title={'Video Game App'} description={'[ EN DESARROLLO ] App de Video Juegos'}/>
                 </Flex>
             </Box>
         </Box>
