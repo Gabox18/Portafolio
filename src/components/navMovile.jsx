@@ -107,7 +107,10 @@ function NavMovile({setSeccion}) {
                         p={'1.5rem'}
                         iconSpacing={'5px'}
                         fontSize={'1.3rem'}
-                        onClick={onClose}>
+                        onClick={()=>{
+                            setSeccion('portafolio')
+                            onClose()
+                        }}>
                         Portafolio
                     </Button>
 

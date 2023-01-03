@@ -5,7 +5,7 @@ import "./SobreMi.css"
 
 function SobreMi(props) {
     return (
-        <Box bg={'#080816'}  w={'100%'} overflowY={'scroll'}>
+        <Box bg={'#080816'}  w={'100%'} overflowY={'auto'}>
             <Box w={'90%'} margin={'0 auto'}>
                 <Flex justifyContent={'space-between'} alignItems={'center'} marginTop={'4rem'}>
                     <Heading as={'h2'} color={'teal'}>Sobre Mi </Heading>

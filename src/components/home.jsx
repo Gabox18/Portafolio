@@ -10,6 +10,7 @@ import LetterHome from './letterHome/LetterHome';
 import SobreMi from './SobreMI/SobreMi';
 import { useState } from 'react';
 import Resumen from './Resumen/Resumen';
+import Portafolio from './Portafolio';
 
 function Home() {
 
@@ -39,6 +40,8 @@ function Home() {
               ? <SobreMi/>
               :seccion==='resumen'
               ?<Resumen/>
+              :seccion==='portafolio'
+              ?<Portafolio/>
               :<></>}
               
              
@@ -92,7 +95,8 @@ function Home() {
               variant='ghost' 
               borderRadius={0} 
               h={'30px'} 
-              iconSpacing={'5px'}>
+              iconSpacing={'5px'}
+              onClick={()=>{setSeccion('portafolio')}}>
               Portafolio
             </Button>
 
