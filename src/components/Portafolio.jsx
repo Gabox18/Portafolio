@@ -7,7 +7,7 @@ import Vgame from '../assets/VideoGameApp.webp'
 
 function Portafolio() {
     return (
-        <Box bg={'#15152af2'} w={'100%'} color='white' overflowY={'auto'}>
+        <Box bg={{base:'#15152af2',md:'#0b0d1e'}} w={'100%'} color='white' overflowY={'auto'}>
             <Box w={'90%'} margin={'0 auto'}>
                 <Flex justifyContent={'space-between'} alignItems={'center'} marginTop={'4rem'}>
                     <Heading as={'h2'} color={'teal'}>Portafolio</Heading>
@@ -15,7 +15,7 @@ function Portafolio() {
                 </Flex>
                 <Divider variant={'dashed'} margin={'0.5rem auto 2rem auto'} />
                 <Flex flexDirection={{base:'column', lg:'row'}}>
-                    <CardPoject bg={pojectPoke} link='https://pokemon-gabox18.vercel.app/' title={'PokeApp'} description={'App de pokemon echa como Poryecto individual en bootcamp Henry'}/>
+                    <CardPoject bg={pojectPoke} link='https://pokemon-gabox18.vercel.app/' title={'PokeApp'} description={'App de pokemon - Poryecto individual Henry'}/>
                     <CardPoject bg={bbApp} link='https://blockbuster-pf.vercel.app/' title={'BlockbusterApp'} description={'App de streaming de peliculas por suscripcion'}/>
                 </Flex>
                 <Flex flexDirection={{base:'column', lg:'row'}} w={{base:'100%',lg:'50%'}} margin={{base:'0',lg:'5rem auto 0 auto'}}>

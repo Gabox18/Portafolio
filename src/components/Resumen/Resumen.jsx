@@ -4,7 +4,7 @@ import "./Resumen.css"
 
 function Resumen() {
     return (
-        <Box bg={'#15152af2'} w={'100%'} overflowY={'auto'}>
+        <Box bg={{base:'#15152af2',md:'#0b0d1e'}} w={'100%'} overflowY={'auto'}>
             <Box w={'90%'} margin={'0 auto'}>
                 <Flex justifyContent={'space-between'} alignItems={'center'} marginTop={'4rem'}>
                     <Heading as={'h2'} color={'teal'}>Resumen </Heading>
@@ -22,7 +22,7 @@ function Resumen() {
                             <h2 className='tituloh2'>Henry</h2>
                             <h3 className='subtituloh3'>Proyecto Académico - BlockBuster APP</h3>
                             <Text marginLeft='10px' align={'justify'} fontSize='0.91rem'>
-                                Proyecto grupal que consiste en la creacion de una lataforma de streaming para alquilar películas y series, y en la cual me desempeñe en :
+                                Proyecto grupal que consiste en la creacion de una plataforma de streaming para alquilar películas y series, y en la cual me desempeñe en :
                                 <br /><span className='brResumen'>✨ Creación de formularios controlados</span>
                                 <br /><span className='brResumen'>✨ Creación del componente React</span>
                                 <br /><span className='brResumen'>✨ Lógica de pasarela de pago con PayPal</span>
@@ -81,7 +81,7 @@ function Resumen() {
                             <h2 className='tituloh2'>Bootcamp Henry</h2>
                             <h3 className='subtituloh3'>Programador web full stack</h3>
                             <Text marginLeft='10px' align={'justify'} fontSize='0.91rem'>
-                                Bootcamp de Programación+800hs
+                                Bootcamp de Programación + 800hs
                                 Realización de proyectos como:
                                 <br />📌 Creación de una plataforma/servicio de transmisión OTT para películas y series en línea.
                                 <br />📌 Diseñar y desarrollar una App de Pokémons que incluyera: búsquedas, filtrado, ordenamiento y creación o adición de información

@@ -5,7 +5,7 @@ import './LetterHome.css'
 function LetterHome() {
     return (
         <div>
-            <p class="saludo">Hola Yo soy</p>
+            <p class="saludo">Hola Soy</p>
             <div class="container">
                     <section class="animation">
                         <div class="first"><div>Gabriel Ferrer</div></div>
