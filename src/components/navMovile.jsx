@@ -46,7 +46,7 @@ function NavMovile({setSeccion}) {
                 size={'xs'}
             >
                 <DrawerOverlay />
-                <DrawerContent bg={'brand.primary'}>
+                <DrawerContent bg={'brand.primary'} overflow={'auto'}>
                     <Heading size='lg' color={'teal'} textAlign={'center'} paddingTop={'0.8rem'}>Gabriel Ferrer</Heading>
                     <Image src={profile} alt={'gabriel ferrer'} width={'12rem'} margin={'2rem auto'} borderRadius={'full'}
                         marginTop={'1rem'}/>
@@ -123,7 +123,10 @@ function NavMovile({setSeccion}) {
                         p={'1.5rem'}
                         iconSpacing={'5px'}
                         fontSize={'1.3rem'}
-                        onClick={onClose}>
+                        onClick={()=>{
+                            setSeccion('contacto')
+                            onClose()
+                        }}>
                         Contacto
                     </Button>
                     <Divider w={'80%'} margin={'0 auto'}/>

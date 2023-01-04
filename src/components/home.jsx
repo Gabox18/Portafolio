@@ -11,6 +11,7 @@ import SobreMi from './SobreMI/SobreMi';
 import { useState } from 'react';
 import Resumen from './Resumen/Resumen';
 import Portafolio from './Portafolio';
+import Contacto from './Contacto';
 
 function Home() {
 
@@ -42,6 +43,8 @@ function Home() {
               ?<Resumen/>
               :seccion==='portafolio'
               ?<Portafolio/>
+              :seccion==='contacto'
+              ?<Contacto/>
               :<></>}
               
              
@@ -107,7 +110,8 @@ function Home() {
             variant='ghost' 
             borderRadius={0} 
             h={'30px'} 
-            iconSpacing={'5px'}>
+            iconSpacing={'5px'}
+            onClick={()=>{setSeccion('contacto')}}>
               Contacto  
             </Button>
 
