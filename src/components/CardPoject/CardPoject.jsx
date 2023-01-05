@@ -20,9 +20,9 @@ function CardPoject({ title, description, bg, link }) {
             <span>
                 <VStack>
                     <Link href={link} isExternal display={'block'}>
-                        <Button variant='link' size={'lg'} fontSize={'x-large'} fontWeight={'bold'} color={'red'}>Ver Proyecto<ExternalLinkIcon mx='2px' /></Button>
+                        <Button variant='link' size={'lg'} fontSize={'x-large'} fontWeight={'bold'} color={'#030312'}>Ver Proyecto<ExternalLinkIcon mx='2px' /></Button>
                     </Link>
-                    <Text color={"red"} fontSize='0.7em' p={' 0 5rem'}>{description}</Text>
+                    <Text color={"white"} fontSize='0.7em' p={' 0 5rem'}>{description}</Text>
                 </VStack>
             </span>
         </div>
