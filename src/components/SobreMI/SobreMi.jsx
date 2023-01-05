@@ -21,7 +21,7 @@ function SobreMi(props) {
                             <h3>Programador web full stack</h3>
                         </div>
                         <Text align={'justify'} color={'white'} marginTop={'1rem'}>
-                            📌Soy Desarrollador Web Full Stack con experiencias trabajando en equipo tanto en proyectos de desarrollo como en otra áreas como atención al cliente.
+                            📌Soy Desarrollador Web Full Stack con experiencias trabajando en equipo tanto en proyectos de desarrollo Web, y tambien en otra áreas como atención al cliente.
                             <br /><br />
                             📌Entre mis aptitudes puedo destacar muy buena capacidad para adaptarme a diferentes proyectos y grupos de trabajo, así como también a cumplir objetivos planteados y asignados dentro de los requisitos de un proyecto de desarrollo, siempre brindando mi ayuda a mis compañeros y apoyándome en ellos si surgen dudas , de ser necesario
                             <br /><br />
