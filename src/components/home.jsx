@@ -18,7 +18,7 @@ function Home() {
   let [seccion,setSeccion ] =useState('home')
   
   return (
-    <Box>
+    <Box overflowY={'hidden'}>
       <Box display={{ base: 'block', md: 'none' }}>
         <NavMovile setSeccion={setSeccion}/>
       </Box>
