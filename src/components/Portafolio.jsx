@@ -5,6 +5,7 @@ import pojectPoke from '../assets/PokeApp.webp'
 import bbApp from '../assets/BlockbusterApp.webp'
 import Vgame from '../assets/VideoGameApp.webp'
 import TodoApp from '../assets/TodoApp_.webp'
+import MongoApp from '../assets/Mongo-ToDo-App.webp'
 
 function Portafolio() {
     return (
@@ -21,8 +22,12 @@ function Portafolio() {
                 </Flex>
                 <Divider m={'2rem'} />
                 <Flex flexDirection={{ base: 'column', lg: 'row' }} marginBottom={'2rem'}>
-                    <CardPoject bg={Vgame} link='https://github.com/Gabox18/PI-VideoGames' title={'Video Game App'} description={'[ EN DESARROLLO ] App de Video Juegos'} />
+                    <CardPoject bg={MongoApp} link='https://front-to-do-gabox18.vercel.app/' title={'Todo App - MongoDB - Chakra UI'} description={'App de ToDo con MongoDB y Chakra UI'} />
                     <CardPoject bg={TodoApp} link='https://todo-react-typescript-gabox18.vercel.app/' title={'Todo App - TypeScript'} description={'Ejercicio Clasico de ToDo'} />
+                </Flex>
+                <Divider m={'2rem'} />
+                <Flex>
+                <CardPoject bg={Vgame} link='https://github.com/Gabox18/PI-VideoGames' title={'Video Game App'} description={'[ EN DESARROLLO ] App de Video Juegos'} />
                 </Flex>
             </Box>
         </Box>
