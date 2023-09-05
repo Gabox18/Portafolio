@@ -17,17 +17,17 @@ function Portafolio() {
                 </Flex>
                 <Divider variant={'dashed'} margin={'0.5rem auto 2rem auto'} />
                 <Flex flexDirection={{ base: 'column', lg: 'row' }}>
-                    <CardPoject bg={pojectPoke} link='https://pokemon-gabox18.vercel.app/' title={'PokeApp'} description={'App de pokemon - Poryecto individual Henry'} />
                     <CardPoject bg={bbApp} link='https://blockbuster-pf.vercel.app/' title={'BlockbusterApp'} description={'App de streaming de peliculas por suscripcion'} />
+                    <CardPoject bg={MongoApp} link='https://front-to-do-gabox18.vercel.app/' title={'Todo App - MongoDB - Chakra UI'} description={'App de ToDo con MongoDB y Chakra UI'} />
                 </Flex>
                 <Divider m={'2rem'} />
                 <Flex flexDirection={{ base: 'column', lg: 'row' }} marginBottom={'2rem'}>
-                    <CardPoject bg={MongoApp} link='https://front-to-do-gabox18.vercel.app/' title={'Todo App - MongoDB - Chakra UI'} description={'App de ToDo con MongoDB y Chakra UI'} />
                     <CardPoject bg={TodoApp} link='https://todo-react-typescript-gabox18.vercel.app/' title={'Todo App - TypeScript'} description={'Ejercicio Clasico de ToDo'} />
+                    <CardPoject bg={pojectPoke} link='https://pokemon-gabox18.vercel.app/' title={'PokeApp'} description={'App de pokemon - Poryecto individual Henry'} />
                 </Flex>
                 <Divider m={'2rem'} />
                 <Flex>
-                <CardPoject bg={Vgame} link='https://github.com/Gabox18/PI-VideoGames' title={'Video Game App'} description={'[ EN DESARROLLO ] App de Video Juegos'} />
+                    <CardPoject bg={Vgame} link='https://github.com/Gabox18/PI-VideoGames' title={'Video Game App'} description={'[ EN DESARROLLO ] App de Video Juegos'} />
                 </Flex>
             </Box>
         </Box>
